@@ -7,24 +7,23 @@ body {
         "rodape rodape rodape rodape";
     grid-template-columns: 300px auto auto 300px;/*define tamanho e quantas colunas criadas*/
     grid-template-rows: auto auto auto auto;/*define tamanho automático das linhas*/
-    background-color: #8E8080;/*altera cor de fundo*/
+    background-color: #2d9c9c;/*altera cor de fundo*/
 
 }
 
 .grad_h{
     grid-area: cabeca;/*parte que compõe uma área da grade*/
-    background-color: #5b5872;    
+    background-color: #177777;    
     min-height: 150px;/*define altura mínima de um elemento*/
     display: flex;
-    border: solid
-
+    border: solid rgb(55, 36, 139);
 }
  
-nav{
+nav li{
     display: flex;/*define se um elemento é tratado como um bloco ou elemento inline */
-    justify-content: center;/*é usada para alinhar os elementos ao longo do eixo principal */
-    align-items: center;/*como flex items são alinhados de acordo com o eixo transversal*/
-    text-align: center;/*alinha elemento centralmente*/
+    justify-content: space-between;/*é usada para alinhar os elementos ao longo do eixo principal */
+    list-style-type: none;/*como flex items são alinhados de acordo com o eixo transversal*/
+    align-items: center;/*alinha elemento centralmente*/
 
 }
 
@@ -32,13 +31,14 @@ nav{
     grid-area: princi;/*parte que compõe uma área da grade*/
     text-align: justify;/*justifica todo o texto*/
     color: black;/*altera cor de letra para preto*/
-    background-color:antiquewhite;/*altera cor de fundo*/
+    background-color:orange;/*altera cor de fundo*/
     border-style: groove;/*estilo de borda em groove*/
     margin-bottom: 3%;/*define margem na parte inferior*/
     margin-top: 3%;/*define espaço acima do elemento*/
     margin-right: 2%;/*define espaço do lado direito*/
     line-height: 1.5;/*define espaçamente entre linhas*/
     padding: 10px;/*define distância entre conteúdo e suas bordas*/
+    border: solid  white;
 }
 
 .grad_e{
@@ -51,6 +51,7 @@ nav{
     line-height: 1.5;/*define espaçamente entre linhas*/
     padding-top: 5%;/*define espaçamento interno superior*/
     padding-bottom: 5%;/*define espaçamento interno inferior*/
+    border: solid  rgb(55, 36, 139);
 }
 
 .grad_d{    
@@ -62,6 +63,7 @@ nav{
     line-height: 1.5;/*define espaçamente entre linhas*/
     padding-top: 5%;/*define espaçamento interno superior*/
     padding-bottom: 5%;/*define espaçamento interno inferior*/
+    border: solid  rgb(55, 36, 139);
 }
 
 img {
@@ -91,20 +93,13 @@ iframe{
     box-sizing: border-box;/* usada para calcular larguras (widths) e alturas (heights) dos elementos.*/
     border: solid;
 }
-.imgrenan{
-    width: 600px;
-    right: 600px;
+nav li{
+    display: inline;
+    margin: 10px;
+    padding: 10px 80px 10px 80px;
+    font-size: 20px;
 }
-.menu li{
-    display: inline-block; /* a tag display define os tipos de exibição internos e externos de um elemento.*/
-    margin: 0 0px;  /*adiciona uma margem ao seu elemento.*/
-    border: solid rgb(241, 239, 239) 2px; /*adicionar uma borda a pagina*/
-}
-.menu li a{
-    font-size: 24px; /* estabelece o tamanho da fonte.*/
-    text-decoration: none; /*decoracao usada na fonte para um texto de elementos*/
-    color: rgb(250, 245, 245);  /*adicona cor*/ 
-    text-transform: uppercase;/*especifica como capitalizar um texto de um elemento.*/ 
-    padding: 10PX 25px; /*define uma a distância entre o conteúdo de um elemento e suas bordas*/
-    border-radius: 10px; /* adiciona bordas arredondadas*/
+a{
+    text-decoration: none;
+    color: yellow;
 }
